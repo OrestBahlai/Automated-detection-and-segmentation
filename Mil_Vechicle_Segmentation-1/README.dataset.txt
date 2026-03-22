@@ -1,0 +1,1 @@
+Detection and segmentation of military vehicles and tanks.
