@@ -1,0 +1,12 @@
+names:
+- Tank
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: mil_vechicle_segmentation-69ull
+  url: https://universe.roboflow.com/detection-fe3wj/mil_vechicle_segmentation-69ull/dataset/2
+  version: 2
+  workspace: detection-fe3wj
+test: ../test/images
+train: ../train/images
+val: ../valid/images
