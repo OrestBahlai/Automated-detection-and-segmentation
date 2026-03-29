@@ -1,19 +1,22 @@
-# Віртуальне середовище
-.venv/
-venv/
+# Моделі 
+models/*.pt
+models/*.onnx
+
+# Дані
+data/test_videos/*.mp4
+data/test_videos/*.avi
+data/sample_images/
+
+# Python
 __pycache__/
+*.pyc
+.venv/
+*.egg-info/
 
-# Ваги моделей YOLO
-*.pt
+# Jupyter
+.ipynb_checkpoints/
 
-# Медіафайли (відео/зображення для тестування)
-*.mp4
-*.avi
-*.jpg
-*.png
-
-# Результати тренувань/тестів (якщо вони генеруються автоматично)
+# Outputs
 runs/
-
-# Системні файли Mac (на випадок перенесення)
-.DS_Store
+outputs/
+*.log
