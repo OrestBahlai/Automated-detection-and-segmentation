@@ -110,7 +110,7 @@ def benchmark(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--source",     required=True)
+    parser.add_argument("--source", default="data/test_videos/test21.MP4")
     parser.add_argument("--model",      default="../models/yolov8n-seg_tuned.pt")
     parser.add_argument("--imgsz",      type=int, default=320)
     parser.add_argument("--conf",       type=float, default=0.3)

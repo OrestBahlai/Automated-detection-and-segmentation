@@ -5,7 +5,7 @@
 
 Система автоматизованого виявлення та інстанс-сегментації військової техніки
 на потокових зображеннях із використанням методів комп'ютерного зору.
-Оптимізована для розгортання на бортових системах БПЛА (Raspberry Pi, Jetson).
+Оптимізована для розгортання на бортових системах БПЛА (Raspberry Pi).
 
 ---
 
@@ -16,8 +16,6 @@
 | YOLOv8n-seg (tuned) | 0.748 | ~128 | - |
 | YOLOv8s-seg         | 0.750 | ~120 | -  |
 | YOLOv9c-seg         | 0.726 | ~75  | -  |
-
-Класи: `Tank`, `Military-vehicle`
 
 ---
 
@@ -57,7 +55,7 @@ python src/detect.py \
 ### Бенчмарк
 ```bash
 python src/benchmark.py \
-  --source data/test_videos/tank_test.mp4 \
+  --source data/test_videos/test21.mp4 \
   --model  models/yolov8n-seg_tuned.pt \
   --imgsz  320 \
   --max_frames 200
@@ -65,7 +63,7 @@ python src/benchmark.py \
 
 ### На Raspberry Pi
 ```bash
-# Встановлення PyTorch для ARM (RPi 4, Python 3.11)
+# Встановлення PyTorch для ARM (RPi 5, Python 3.11)
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 pip install -r requirements_rpi.txt
 
