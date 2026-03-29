@@ -11,11 +11,11 @@
 
 ## Результати
 
-| Модель | mAP@50 (Mask) | FPS (GPU) | FPS (RPi4) |
+| Модель | mAP@50 (Mask) | FPS (GPU) | FPS (RPi5) |
 |--------|:---:|:---:|:---:|
-| YOLOv8n-seg (tuned) | 0.748 | ~128 | ~8–12 |
-| YOLOv8s-seg         | 0.750 | ~120 | ~4–6  |
-| YOLOv9c-seg         | 0.726 | ~75  | ~2–3  |
+| YOLOv8n-seg (tuned) | 0.748 | ~128 | - |
+| YOLOv8s-seg         | 0.750 | ~120 | -  |
+| YOLOv9c-seg         | 0.726 | ~75  | -  |
 
 Класи: `Tank`, `Military-vehicle`
 
