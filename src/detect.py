@@ -86,7 +86,7 @@ def run_detection(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--source", default="data/test_videos/test21.MP4", help="Шлях до відео або 0 для камери")
+    parser.add_argument("--source",  required=True, help="Шлях до відео або 0 для камери")
     parser.add_argument("--model",   default="models/yolov8n-seg_tuned.pt")
     parser.add_argument("--output",  default=None, help="Шлях для збереження відео")
     parser.add_argument("--conf",    type=float, default=0.3)

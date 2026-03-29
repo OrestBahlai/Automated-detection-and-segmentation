@@ -46,7 +46,7 @@
 pip install -r requirements.txt
 
 python src/detect.py \
-  --source data/test_videos/tank_test.mp4 \
+  --source data/test_videos/test21.MP4 \
   --model  models/yolov8n-seg_tuned.pt \
   --output output_result.mp4 \
   --show
@@ -55,7 +55,7 @@ python src/detect.py \
 ### Бенчмарк
 ```bash
 python src/benchmark.py \
-  --source data/test_videos/test21.mp4 \
+  --source data/test_videos/test21.MP4 \
   --model  models/yolov8n-seg_tuned.pt \
   --imgsz  320 \
   --max_frames 200
@@ -68,7 +68,7 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 pip install -r requirements_rpi.txt
 
 python src/rpi_detect.py \
-  --source data/test_videos/tank_test.mp4 \
+  --source data/test_videos/test21.MP4 \
   --model  models/yolov8n-seg_tuned.pt \
   --imgsz  320 \
   --output output_rpi.mp4

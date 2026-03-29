@@ -114,7 +114,7 @@ def run_rpi(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="YOLOv8-seg на Raspberry Pi")
-    parser.add_argument("--source", default="data/test_videos/test21.MP4")
+    parser.add_argument("--source",  required=True)
     parser.add_argument("--model",   default="../models/yolov8n-seg_tuned.pt")
     parser.add_argument("--output",  default=None)
     parser.add_argument("--conf",    type=float, default=0.35)
